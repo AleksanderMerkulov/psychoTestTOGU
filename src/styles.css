@@ -19,6 +19,7 @@ a{
 /* HEADER */
 header{
     background-color: #FCFEFF;
+    width: 100%;
 }
 header nav{
     display: flex;
@@ -41,7 +42,6 @@ header nav{
         text-align:justify;
     }
     .container{
-        max-width: 100%;
+        max-width:none;    
     }
-
 }

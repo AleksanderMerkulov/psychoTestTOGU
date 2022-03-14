@@ -2,11 +2,77 @@
     color: #FFFFFF;
 }
 
+.inner{
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    margin-top: 8%;
+}
+@media(max-device-width: 480px){
+    .inner{
+        display: flex;
+    }
+}
+
 /* Right side*/
+.informationInnerMain{
+    align-items: center;
+}
 #textHead{
     font-family: 'Russo One';
     font-style: normal;
     font-weight: 400;
     font-size: 225%;
     line-height: 51px;
+}
+li{
+    font-size: 36px;
+    
+}
+button{
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 200%;
+    line-height: 58px;
+
+    width: 416px;
+    height: 76px;
+    left: 720px;
+    top: 578px;
+
+    background: #2B9EDD;
+    border-radius: 15px;
+
+    margin-left: 10%;
+    margin-top: 10%;
+
+    transition: 0.4s;
+
+    border: none;
+}
+span{
+    transition: 0.2s;
+}
+button:hover{
+    background: linear-gradient(180deg, #65C9FF 0%, rgba(101, 201, 255, 0) 100%);
+    box-shadow: 0px 12px 4px rgba(0, 0, 0, 0.25);
+    transform: translateY(-10px);
+}
+button:hover span{
+    color: #3E3E3E;
+    transform: scale(10%);
+}
+
+/* Left side */
+.vectorGirlInner{
+
+    width: 448px;
+    height: 323px;
+    left: 139px;
+    top: 205px;
+
+    background: url(/psychotest-app/design/mainPage/vectorGirl.jpg);
+    box-shadow: 0px 50px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 70px;
 }
