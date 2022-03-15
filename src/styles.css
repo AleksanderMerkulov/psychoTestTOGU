@@ -1,0 +1,47 @@
+/* Global styles */
+body{
+    color: #3E3E3E;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    background-color: #22B1FF;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: #3E3E3E;
+}
+
+.container{
+    max-width: 80%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* HEADER */
+header{
+    background-color: #FCFEFF;
+    width: 100%;
+}
+header nav{
+    display: flex;
+}
+#PNUmainLink{
+    font-family: 'Russo One', sans-serif;
+    font-size: 300%;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    font-style: normal;
+    font-weight: 400;
+    line-height: 58px;
+}
+
+@media(max-device-width: 480px) {
+    #PNUmainLink{
+        font-size: 150%;
+        line-height: normal;
+        text-align:justify;
+    }
+    .container{
+        max-width:none;    
+    }
+}
