@@ -1,0 +1,12 @@
+.blockInputInner{
+    display: grid;
+    grid-template-columns: 10% 10%;
+}
+.grid4{
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    /* grid-template-rows: 10% 10%; */
+}
+.grid4 .blockInputInner{
+    grid-template-columns: 30% 30%;
+}

@@ -1,16 +1,16 @@
-import { Injectable } from '@angular/core';
+// import { Injectable } from '@angular/core';
 
-@Injectable({
-  providedIn: 'root'
-})
+// @Injectable({
+//   providedIn: 'root'
+// })
 export class BlockoneService {
 
-  constructor(public OneNature:number,
+  constructor(
+    public OneNature:number,
     public OneTechnology:number,
     public OneHuman:number,
     public OneSign:number,
     public OneArtistic:number,
-    
     // test 2
     public TwoBiolohy:number,
     public TwoGeography:number,
@@ -42,5 +42,15 @@ export class BlockoneService {
     public TwoPerforming:number,
     public TwoMusic:number,
     public TwoSport:number,
+    //test3
+    public ThreeReal:number,
+    public ThreeInvestigative:number,
+    public ThreeArtistic:number,
+    public ThreeSocial:number,
+    public ThreeEnterprisingn:number,
+    public ThreeConventional:number,
+    //test4
+    public FourSphere:string,
+    public FourActivity:string,
     ) { }
 }
