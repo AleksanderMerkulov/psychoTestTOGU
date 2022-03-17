@@ -1,0 +1,30 @@
+.blockInputInner{
+    display: grid;
+    grid-template-columns: 10% 10%;
+}
+.grid4{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    /* grid-template-rows: 10% 10%; */
+}
+.grid4 .blockInputInner{
+    grid-template-columns: 40% 40%;
+}
+.blockInputInner span{
+    /*  background-color: #2B9EDD; */
+    color: white;
+}
+.grid3{
+    display: grid;
+    grid-template-columns: repeat(3,30%);
+}
+.grid3 .blockInputInner{
+    grid-template-columns: 30% 30%;  
+}
+.grid2{
+    display: grid;
+    grid-template-columns: 30% 30%;
+}
+.grid2 .blockInputInner{
+    grid-template-columns: 20% 20%;
+}
