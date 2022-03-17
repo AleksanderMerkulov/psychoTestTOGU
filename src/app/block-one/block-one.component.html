@@ -1,8 +1,8 @@
 <p>block-one works!</p>
 <div class="container">
-    <div>
-        <h3>Ответы на первый тест</h3>
-        <form name="blokcOneFormOne">
+    <form (ngSubmit)="sendInfo()" name="centralFormBlockOne">
+        <h2>Ответы на первый тест</h2>
+        <div name="blokcOneFormOne">
             <div class="blockInputInner">
                 <span>Природа</span>
                 <input [(ngModel)]="test.OneNature" name="b1f1i1">
@@ -23,216 +23,193 @@
                 <span>Артист</span>
                 <input [(ngModel)]="test.OneArtistic" name="b1f1i5">
             </div>
-            <button (click)="check()">Подтвердить первый тест</button>
-        </form>
-        <h3>test2</h3>
-        <form name="blockOneFormTwo">
+        </div>
+        <!--  -->
+        <h2>Ответы на второй тест</h2>
+        <div name="blockOneFormTwo">
             <div class="grid4">
                 <div class="blockInputInner">
-                    <span>Природа</span>
-                    <input [(ngModel)]="test.OneNature" name="b1f2i1">
+                    <span>Биология</span>
+                    <input [(ngModel)]="test.TwoBiolohy" name="b1f3i">
                 </div>
                 <div class="blockInputInner">
-                    <span>Природа</span>
-                    <input [(ngModel)]="test.OneNature" name="b1f2i1">
+                    <span>География</span>
+                    <input [(ngModel)]="test.TwoGeography" name="b1f2i2">
                 </div>
                 <div class="blockInputInner">
-                    <span>Природа</span>
-                    <input [(ngModel)]="test.OneNature" name="b1f2i1">
+                    <span>Геология</span>
+                    <input [(ngModel)]="test.TwoGeology" name="b1f2i3">
                 </div>
                 <div class="blockInputInner">
-                    <span>Природа</span>
-                    <input [(ngModel)]="test.OneNature" name="b1f2i1">
+                    <span>Медицина</span>
+                    <input [(ngModel)]="test.TwoMedicine" name="b1f2i4">
                 </div>
             </div>
             <div class="grid4">
                 <div class="blockInputInner">
-                    <span>Природа</span>
-                    <input [(ngModel)]="test.OneNature" name="b1f2i1">
+                    <span>Лёгкая и пищевая промышленность</span>
+                    <input [(ngModel)]="test.TwoIndustry" name="b1f2i5">
                 </div>
                 <div class="blockInputInner">
-                    <span>Природа</span>
-                    <input [(ngModel)]="test.OneNature" name="b1f2i1">
+                    <span>Физика</span>
+                    <input [(ngModel)]="test.TwoPhysics" name="b1f2i6">
                 </div>
                 <div class="blockInputInner">
-                    <span>Природа</span>
-                    <input [(ngModel)]="test.OneNature" name="b1f2i1">
+                    <span>Химия</span>
+                    <input [(ngModel)]="test.TwoChemistry" name="b1f2i7">
                 </div>
                 <div class="blockInputInner">
-                    <span>Природа</span>
-                    <input [(ngModel)]="test.OneNature" name="b1f2i1">
+                    <span>Техника</span>
+                    <input [(ngModel)]="test.TwoTechique" name="b1f2i8">
                 </div>
             </div>
             <div class="grid4">
                 <div class="blockInputInner">
-                    <span>Природа</span>
-                    <input [(ngModel)]="test.OneNature" name="b1f2i1">
+                    <span>Электро и радиотехника</span>
+                    <input [(ngModel)]="test.TwoEngineering" name="b1f2i9">
                 </div>
                 <div class="blockInputInner">
-                    <span>Природа</span>
-                    <input [(ngModel)]="test.OneNature" name="b1f2i1">
+                    <span>Металлобработка</span>
+                    <input [(ngModel)]="test.TwoMetalworking" name="b1f3i0">
                 </div>
                 <div class="blockInputInner">
-                    <span>Природа</span>
-                    <input [(ngModel)]="test.OneNature" name="b1f2i1">
+                    <span>Деревообработка</span>
+                    <input [(ngModel)]="test.TwoWoodworking" name="b1f3i1">
                 </div>
                 <div class="blockInputInner">
-                    <span>Природа</span>
-                    <input [(ngModel)]="test.OneNature" name="b1f2i1">
+                    <span>Строительство</span>
+                    <input [(ngModel)]="test.TwoConstruction" name="b1f3i2">
                 </div>
             </div>
             <div class="grid4">
                 <div class="blockInputInner">
-                    <span>Природа</span>
-                    <input [(ngModel)]="test.OneNature" name="b1f2i1">
+                    <span>Транспорт</span>
+                    <input [(ngModel)]="test.TwoTransport" name="b1f3i3">
                 </div>
                 <div class="blockInputInner">
-                    <span>Природа</span>
-                    <input [(ngModel)]="test.OneNature" name="b1f2i1">
+                    <span>Авиация и морское дело</span>
+                    <input [(ngModel)]="test.TwoAAM" name="b1f3i4">
                 </div>
                 <div class="blockInputInner">
-                    <span>Природа</span>
-                    <input [(ngModel)]="test.OneNature" name="b1f2i1">
+                    <span>Военные специальности</span>
+                    <input [(ngModel)]="test.TwoMilitary" name="b1f3i5">
                 </div>
                 <div class="blockInputInner">
-                    <span>Природа</span>
-                    <input [(ngModel)]="test.OneNature" name="b1f2i1">
+                    <span>История</span>
+                    <input [(ngModel)]="test.TwoHistory" name="b1f3i6">
                 </div>
             </div>
             <div class="grid4">
                 <div class="blockInputInner">
-                    <span>Природа</span>
-                    <input [(ngModel)]="test.OneNature" name="b1f2i1">
+                    <span>Литература</span>
+                    <input [(ngModel)]="test.TwoLiterature" name="b1f3i7">
                 </div>
                 <div class="blockInputInner">
-                    <span>Природа</span>
-                    <input [(ngModel)]="test.OneNature" name="b1f2i1">
+                    <span>Журналистика</span>
+                    <input [(ngModel)]="test.TwoJournalism" name="b1f3i8">
                 </div>
                 <div class="blockInputInner">
-                    <span>Природа</span>
-                    <input [(ngModel)]="test.OneNature" name="b1f2i1">
+                    <span>Общетвенная деятельность</span>
+                    <input [(ngModel)]="test.TwoSocial" name="b1f3i9">
                 </div>
                 <div class="blockInputInner">
-                    <span>Природа</span>
-                    <input [(ngModel)]="test.OneNature" name="b1f2i1">
+                    <span>Педагогика</span>
+                    <input [(ngModel)]="test.TwoPedagogy" name="b1f2i20">
                 </div>
             </div>
             <div class="grid4">
                 <div class="blockInputInner">
-                    <span>Природа</span>
-                    <input [(ngModel)]="test.OneNature" name="b1f2i1">
+                    <span>Право и юриспруденция</span>
+                    <input [(ngModel)]="test.TwoLaw" name="b1f2i21">
                 </div>
                 <div class="blockInputInner">
-                    <span>Природа</span>
-                    <input [(ngModel)]="test.OneNature" name="b1f2i1">
+                    <span>Сфера обслуживания</span>
+                    <input [(ngModel)]="test.TwoService" name="b1f2i22">
                 </div>
                 <div class="blockInputInner">
-                    <span>Природа</span>
-                    <input [(ngModel)]="test.OneNature" name="b1f2i1">
+                    <span>Математика</span>
+                    <input [(ngModel)]="test.TwoMaths" name="b1f2i23">
                 </div>
                 <div class="blockInputInner">
-                    <span>Природа</span>
-                    <input [(ngModel)]="test.OneNature" name="b1f2i1">
+                    <span>Экономика</span>
+                    <input [(ngModel)]="test.TwoEconomy" name="b1f2i24">
                 </div>
             </div>
             <div class="grid4">
                 <div class="blockInputInner">
-                    <span>Природа</span>
-                    <input [(ngModel)]="test.OneNature" name="b1f2i1">
+                    <span>Иностранные языки</span>
+                    <input [(ngModel)]="test.TwoForeign" name="b1f2i25">
                 </div>
                 <div class="blockInputInner">
-                    <span>Природа</span>
-                    <input [(ngModel)]="test.OneNature" name="b1f2i1">
+                    <span>Изобразительные языки</span>
+                    <input [(ngModel)]="test.TwoFigurative" name="b1f2i26">
                 </div>
                 <div class="blockInputInner">
-                    <span>Природа</span>
-                    <input [(ngModel)]="test.OneNature" name="b1f2i1">
+                    <span>Изобразительное искусство</span>
+                    <input [(ngModel)]="test.TwoArt" name="b1f2i27">
                 </div>
                 <div class="blockInputInner">
-                    <span>Природа</span>
-                    <input [(ngModel)]="test.OneNature" name="b1f2i1">
+                    <span>Сценическое искусство</span>
+                    <input [(ngModel)]="test.TwoPerforming" name="b1f2i28">
                 </div>
             </div>
             <div class="grid4">
                 <div class="blockInputInner">
-                    <span>Природа</span>
-                    <input [(ngModel)]="test.OneNature" name="b1f2i1">
+                    <span>Музыка</span>
+                    <input [(ngModel)]="test.TwoMusic" name="b1f2i29">
                 </div>
                 <div class="blockInputInner">
-                    <span>Природа</span>
-                    <input [(ngModel)]="test.OneNature" name="b1f2i1">
+                    <span>Физкультура и спорт</span>
+                    <input [(ngModel)]="test.TwoSport" name="b1f2i30">
                 </div>
-                <div class="blockInputInner">
-                    <span>Природа</span>
-                    <input [(ngModel)]="test.OneNature" name="b1f2i1">
-                </div>
-                <div class="blockInputInner">
-                    <span>Природа</span>
-                    <input [(ngModel)]="test.OneNature" name="b1f2i1">
-                </div>
-            </div>
-            <div class="grid4">
-                <div class="blockInputInner">
-                    <span>Природа</span>
-                    <input [(ngModel)]="test.OneNature" name="b1f2i1">
-                </div>
-                <div class="blockInputInner">
-                    <span>Природа</span>
-                    <input [(ngModel)]="test.OneNature" name="b1f2i1">
-                </div>
-                <div class="blockInputInner">
-                    <span>Природа</span>
-                    <input [(ngModel)]="test.OneNature" name="b1f2i1">
-                </div>
-                <div class="blockInputInner">
-                    <span>Природа</span>
-                    <input [(ngModel)]="test.OneNature" name="b1f2i1">
-                </div>
-            </div>
-            <div class="grid4">
-                <div class="blockInputInner">
-                    <span>Природа</span>
-                    <input [(ngModel)]="test.OneNature" name="b1f2i1">
-                </div>
-                <div class="blockInputInner">
-                    <span>Природа</span>
-                    <input [(ngModel)]="test.OneNature" name="b1f2i1">
-                </div>
-                <div class="blockInputInner">
-                    <span>Природа</span>
-                    <input [(ngModel)]="test.OneNature" name="b1f2i1">
-                </div>
-                <div class="blockInputInner">
-                    <span>Природа</span>
-                    <input [(ngModel)]="test.OneNature" name="b1f2i1">
-                </div>
-            </div>
-            <div class="grid4">
-                <div class="blockInputInner">
-                    <span>Природа</span>
-                    <input [(ngModel)]="test.OneNature" name="b1f2i1">
-                </div>
-                <div class="blockInputInner">
-                    <span>Природа</span>
-                    <input [(ngModel)]="test.OneNature" name="b1f2i1">
-                </div>
-                <div class="blockInputInner">
-                    <span>Природа</span>
-                    <input [(ngModel)]="test.OneNature" name="b1f2i1">
-                </div>
-                <div class="blockInputInner">
-                    <span>Природа</span>
-                    <input [(ngModel)]="test.OneNature" name="b1f2i1">
-                </div>
-            </div>
-            
-        </form>
-        <h3>test4</h3>
-        <div>
-            <div>
-                <span></span>
-                <input>
             </div>
         </div>
-    </div>
+        <!--  -->
+        <h2>Ответы на третий тест</h2>
+        <div>
+            <div class="grid3">
+                <div class="blockInputInner">
+                    <span>Реалистичный</span>
+                    <input [(ngModel)]="test.ThreeReal" name="b1f3i1">
+                </div>
+                <div class="blockInputInner">
+                    <span>Исследовательский</span>
+                    <input [(ngModel)]="test.ThreeInvestigative" name="b1f3i2">
+                </div>
+                <div class="blockInputInner">
+                    <span>Артистичный</span>
+                    <input [(ngModel)]="test.ThreeArtistic" name="b1f3i3">
+                </div>
+            </div>
+            <div class="grid3">
+                <div class="blockInputInner">
+                    <span>Социальный</span>
+                    <input [(ngModel)]="test.ThreeSocial" name="b1f3i4">
+                </div>
+                <div class="blockInputInner">
+                    <span>Предприимчивый</span>
+                    <input [(ngModel)]="test.ThreeEnterprisingn" name="b1f3i5">
+                </div>
+                <div class="blockInputInner">
+                    <span>Традиционный</span>
+                    <input [(ngModel)]="test.ThreeConventional" name="b1f3i6">
+                </div>
+            </div>
+        </div>
+        <!--  -->
+        <h2>Ответы на четвёртый тест</h2>
+        <div>
+            <div class="grid2">
+                <div class="blockInputInner">
+                    <span>Сфера</span>
+                    <input [(ngModel)]="test.ThreeSocial" name="b1f4i1">
+                </div>
+                <div class="blockInputInner">
+                    <span>Деятельность</span>
+                    <input [(ngModel)]="test.ThreeEnterprisingn" name="b1f4i2">
+                </div>
+            </div>
+        </div>
+        <button type="submit">Получить результат по тестам!</button>
+    </form>
 </div>
