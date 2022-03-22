@@ -55,3 +55,14 @@ header nav{
         max-width:none;    
     }
 }
+
+/* FOOTER */
+
+footer{
+    position: fixed;
+    left: 0; bottom: 0;
+    color: #3E3E3E;
+    width: 100%;
+    text-align: center;
+    background-color: aqua;
+}

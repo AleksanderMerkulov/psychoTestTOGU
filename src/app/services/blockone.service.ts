@@ -58,7 +58,7 @@ export class BlockoneService {
     public ThreeEnterprisingn:number,
     public ThreeConventional:number,
     //test4
-    public FourSphere:string,
-    public FourActivity:string,
+    // public FourSphere:string,
+    // public FourActivity:string,
     ) { }
 }

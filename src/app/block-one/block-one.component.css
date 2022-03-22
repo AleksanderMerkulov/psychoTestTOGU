@@ -1,19 +1,28 @@
+
 .blockInputInner{
     display: grid;
     grid-template-columns: 10% 10%;
-}
-.grid4{
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
-    /* grid-template-rows: 10% 10%; */
-}
-.grid4 .blockInputInner{
-    grid-template-columns: 40% 40%;
+    margin-top: 0.2%;
 }
 .blockInputInner span{
     /*  background-color: #2B9EDD; */
     color: white;
 }
+
+/* GRID 4 */
+
+.grid4{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    /* grid-template-rows: 10% 10%; */
+    margin-top: 0.2%;
+}
+.grid4 .blockInputInner{
+    grid-template-columns: 40% 40%;
+}
+
+/* GRID 3 */
+
 .grid3{
     display: grid;
     grid-template-columns: repeat(3,30%);
@@ -21,10 +30,68 @@
 .grid3 .blockInputInner{
     grid-template-columns: 30% 30%;  
 }
+
+/* GRID 2 */
+
 .grid2{
     display: grid;
     grid-template-columns: 30% 30%;
 }
 .grid2 .blockInputInner{
     grid-template-columns: 20% 20%;
+}
+
+/* LINK */
+
+a{
+    transition: .2s;
+}
+.linkInner{
+    margin-bottom: 2%;
+    font-size: 20px;
+    transition: 0.2s;
+}
+.linkInner:hover{
+    transform: translateY(-5px);
+}
+.linkInner:hover a{
+    color: black;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* BUTTON */
+
+.submitButton{
+
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 200%;
+    line-height: 58px;
+    color: #fff;
+
+    background: #2B9EDD;
+    border-radius: 15px;
+    
+    margin-left: 10%;
+    margin-top: 3%;
+
+    transition: 0.4s;
+
+    border: none;
+}
+.submitButton:hover{
+    background: linear-gradient(180deg, #65C9FF 0%, rgba(101, 201, 255, 0) 100%);
+    box-shadow: 0px 12px 4px rgba(0, 0, 0, 0.25);
+    transform: translateY(-10px);
+    color: #3E3E3E;
+}
+
+/* INPUTS */
+
+input{
+    border-radius: 5px;
+    border: 0.2px solid black;
+
+    background-color: #FCFEFF;
 }

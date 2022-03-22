@@ -12,9 +12,9 @@ import { RouterModule, Routes } from '@angular/router';
 
 export const appRout:Routes=[
   {path:'', component:MainComponent},
-  {path:'block', component:BlockPickComponent},
-  {path:'block/one', component:BlockOneComponent},
-  {path:'block/two', component:BlockTwoComponent},
+  {path:'test', component:BlockOneComponent},
+  // {path:'block/one', component:BlockOneComponent},
+  // {path:'block/two', component:BlockTwoComponent},
 ]
 
 @NgModule({

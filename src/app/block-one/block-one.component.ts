@@ -10,7 +10,7 @@ import { HttpService } from '../services/http/http.service';
 })
 export class BlockOneComponent implements OnInit {
 
-  test: BlockoneService = new BlockoneService(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'','')
+  test: BlockoneService = new BlockoneService(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
   // test!: BlockoneService 
 
   constructor(public http:HttpClient,

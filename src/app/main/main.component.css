@@ -11,6 +11,7 @@
 @media(max-device-width: 480px){
     .inner{
         display: flex;
+        flex-direction: column;
     }
 }
 
@@ -75,4 +76,17 @@ button:hover span{
     background: url(/psychotest-app/design/mainPage/vectorGirl.jpg);
     box-shadow: 0px 50px 4px 10px rgba(0, 0, 0, 0.25);
     border-radius: 70px;
+}
+@media(max-device-width: 480px){
+    .vectorGirlInner{
+        left: 0; 
+        top: 0;
+        width: 300px;
+        height: 216.29px;
+
+        box-shadow: 0px 10px 4px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
+
+        margin: 0 auto;
+    }
 }
