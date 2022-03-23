@@ -31,18 +31,19 @@
     font-size: 225%;
     line-height: 51px;
 }
-@media(max-device-width: 480px){
+
+@media(max-device-width: 1024px){
     #textHead{
-       font-size: 180%;
+       font-size: 300%;
        line-height:normal;
        margin: 0 auto;
        margin-top: 10%;
        text-align: center;
     }
 }
-@media(max-device-width: 1024px){
+@media(max-device-width: 480px){
     #textHead{
-       font-size: 300%;
+       font-size: 180%;
        line-height:normal;
        margin: 0 auto;
        margin-top: 10%;
@@ -95,14 +96,7 @@ button:hover span{
     color: #3E3E3E;
     transform: scale(10%);
 }
-@media(max-device-width: 480px){
-    button{
-        font-size: 150%;
-        margin: 0 auto;
-        width: 100%;
-        height: auto;
-    }
-}
+
 @media(max-device-width: 1024px){
     button{
         font-size: 200%;
@@ -114,7 +108,23 @@ button:hover span{
         height: auto;
     }
 }
+@media(max-device-width: 880px){
+    button{
+        margin-bottom: 10%;
+    }
+}
+@media(max-device-width: 480px){
+    button{
+        font-size: 150%;
+        z-index: 1;
 
+        margin: 0 auto;
+        margin-bottom: 10%;
+
+        width: 100%;
+        height: auto;
+    }
+}
 /* Left side */
 .vectorGirlInner{
 
