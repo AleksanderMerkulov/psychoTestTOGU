@@ -97,8 +97,8 @@ footer{
     text-align: center;
     background-color: aqua;
 }
-@media(max-device-width: 820px){
+/* @media(max-device-width: 820px){
     footer{
         position: relative;
     }
-}
+} */
