@@ -1,0 +1,64 @@
+.buttonInner{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(2, 100%);
+    grid-auto-rows: minmax(100%, auto);
+    /* display: flex; */
+    margin-top: 10%;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); */
+}
+.btn{
+    max-width:50%;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    /* margin-left: 5%;
+    margin-right: 5%; */
+
+    background-color: #2B9EDD;
+    border-radius: 15px;
+    border: none;
+
+    color: #FFFFFF;
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 58px;
+
+    transition: .2s;
+}
+.btn:hover{
+    background: linear-gradient(180deg, #65C9FF 0%, rgba(101, 201, 255, 0) 100%);
+    box-shadow: 0px 12px 4px rgba(0, 0, 0, 0.25);
+    transform: translateY(-10px);
+    color: #3E3E3E;
+}
+.accOne{
+    background-color: #FFFFFF;
+}
+
+.acc{
+    margin: 0 auto;
+    margin-top: 5%;
+
+    max-width:40%;
+    width: 100%;
+    text-align: center;
+
+    background-color: #2B9EDD;
+    border-radius: 15px;
+
+    color: #FFFFFF;
+    font-size: 18px;
+}
+.acc span{
+
+}
+#disOne{
+    display: none;
+}
