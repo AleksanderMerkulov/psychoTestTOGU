@@ -21,6 +21,7 @@ header{
     background-color: #FCFEFF;
     width: 100%;
 }
+
 header nav{
     display: flex;
 }
@@ -53,5 +54,51 @@ header nav{
     }
     .container{
         max-width:none;    
+    }
+}
+@media(max-device-width: 480px) {
+    #PNUmainLink{
+        font-size: 150%;
+        line-height: normal;
+        text-align:justify;
+    }
+    .container{
+        max-width:none;    
+    }
+}
+@media(max-device-width: 820px) {
+    #PNUmainLink{
+        font-size: 150%;
+        line-height: normal;
+        text-align:justify;
+    }
+    .container{
+        max-width:95%;    
+    }
+}
+@media(max-device-width: 1024px) {
+    #PNUmainLink{
+        font-size: 150%;
+        line-height: normal;
+        text-align:justify;
+    }
+    .container{
+        /* max-width:none;     */
+    }
+}
+
+/* FOOTER */
+
+footer{
+    position: fixed;
+    left: 0; bottom: 0;
+    color: #3E3E3E;
+    width: 100%;
+    text-align: center;
+    background-color: aqua;
+}
+@media(max-device-width: 820px){
+    footer{
+        position: relative;
     }
 }
