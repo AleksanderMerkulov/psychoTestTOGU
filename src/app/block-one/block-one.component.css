@@ -74,6 +74,17 @@
         background-color: #65c9ff7a;
     }
 }
+@media(max-device-width: 1024px){
+    .grid4 .blockInputInner input{
+        margin-left: 10px;
+    }
+}
+@media(max-device-width: 1440px){
+    .grid4 .blockInputInner input{
+        margin-left: 10%;
+    }
+}
+
 /* GRID 3 */
 
 .grid3{
@@ -113,6 +124,16 @@
     }
     .grid3:first-child .blockInputInner:nth-child(2n){
         background-color: #65c9ff7a;
+    }
+}
+@media(max-device-width: 1024px){
+    .grid3 .blockInputInner input{
+        margin-left: 30%;
+    }
+}
+@media(max-device-width: 1440px){
+    .grid3 .blockInputInner input{
+        margin-left: 30%;
     }
 }
 
