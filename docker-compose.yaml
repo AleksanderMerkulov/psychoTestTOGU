@@ -1,0 +1,14 @@
+version: '3.4'
+services:
+end:
+    image: enderwar/togupsy:latest
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:5076
+
+    ports:
+      - 5076:5076
+client:  
+    image: psychotest:latest
+    ports:
+      - 4200:80

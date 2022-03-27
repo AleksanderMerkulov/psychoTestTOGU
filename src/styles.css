@@ -83,7 +83,7 @@ header nav{
         text-align:justify;
     }
     .container{
-        /* max-width:none;     */
+        max-width:95%;    
     }
 }
 

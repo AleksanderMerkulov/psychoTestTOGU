@@ -18,9 +18,12 @@ export class BlockOneComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  check(){
-    console.log(this.test)
-  }
+  //работа со структурой DOM в ts
+  // check(){
+  //   let x = document.querySelectorAll('input')
+  //   x.item(1).style.display = 'none'
+  //   console.log(x)
+  // }
   sendInfo(){
     this.httpService.sendBlockOne(this.test)
     .subscribe((data:any)=>{},error=>{console.log(error)})
