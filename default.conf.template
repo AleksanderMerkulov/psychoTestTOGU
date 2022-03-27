@@ -9,6 +9,6 @@ server {
     }
 
     location /api {
-        proxy_pass https://localhost:7076/api;
+        proxy_pass http://end:5076/api;
     }
 }

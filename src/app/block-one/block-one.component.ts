@@ -22,11 +22,12 @@ export class BlockOneComponent implements OnInit {
   // check(){
   //   let x = document.querySelectorAll('input')
   //   x.item(1).style.display = 'none'
-  //   console.log(x)
+  //   console.log(x)ааа
   // }
   sendInfo(){
     this.httpService.sendBlockOne(this.test)
-    .subscribe((data:any)=>{},error=>{console.log(error)})
+    .subscribe((data:any)=>{console.log(123)
+    console.log(data)},error=>{console.log(error)})
   }
 
 }

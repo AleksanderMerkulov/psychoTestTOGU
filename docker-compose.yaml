@@ -1,6 +1,6 @@
 version: '3.4'
 services:
-end:
+  end:
     image: enderwar/togupsy:latest
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
@@ -8,7 +8,7 @@ end:
 
     ports:
       - 5076:5076
-client:  
-    image: psychotest:latest
+  client:  
+    image: alexawler/psychotest:latest
     ports:
       - 4200:80
