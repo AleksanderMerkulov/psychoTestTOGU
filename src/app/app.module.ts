@@ -9,6 +9,7 @@ import { BlockTwoComponent } from './block-two/block-two.component';
 import { FormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http'
 import { RouterModule, Routes } from '@angular/router';
+import { ResultComponent } from './result/result.component';
 
 export const appRout:Routes=[
   {path:'', component:MainComponent},
@@ -23,7 +24,8 @@ export const appRout:Routes=[
     MainComponent,
     BlockPickComponent,
     BlockOneComponent,
-    BlockTwoComponent
+    BlockTwoComponent,
+    ResultComponent
   ],
   imports: [
     BrowserModule,
