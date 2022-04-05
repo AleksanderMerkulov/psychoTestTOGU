@@ -1,1 +1,24 @@
-<p>result works!</p>
+<section>
+    <div class="container">
+        <h1>Результаты по тестам!</h1>
+        <div *ngFor="let profession of data">
+            <h4>Название профессии: {{data.name}}</h4>
+            <div>
+                <h5>Уровень обучения: </h5>
+                <p>{{data.education_level}}</p>
+            </div>
+            <div>
+                <h5>Описание: </h5>
+                <p>{{data.description}}</p>
+            </div>
+            <div>
+                <h5>Экзамены: </h5>
+                <p>{{data.exams}}</p>
+            </div>
+            <div>
+                <h5>Кем работать: </h5>
+                <p>{{data.desription_additional}}</p>
+            </div>
+        </div>
+    </div>
+</section>

@@ -14,6 +14,7 @@ import { ResultComponent } from './result/result.component';
 export const appRout:Routes=[
   {path:'', component:MainComponent},
   {path:'test', component:BlockOneComponent},
+  {path:'result', component:ResultComponent},
   // {path:'block/one', component:BlockOneComponent},
   // {path:'block/two', component:BlockTwoComponent},
 ]
@@ -25,7 +26,7 @@ export const appRout:Routes=[
     BlockPickComponent,
     BlockOneComponent,
     BlockTwoComponent,
-    ResultComponent
+    ResultComponent,
   ],
   imports: [
     BrowserModule,
