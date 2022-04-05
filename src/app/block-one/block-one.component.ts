@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { BlockoneService } from '../services/blockone.service';
 import { HttpService } from '../services/http/http.service';
 
@@ -14,7 +15,10 @@ export class BlockOneComponent implements OnInit {
   // test!: BlockoneService 
 
   constructor(public http:HttpClient,
-    public httpService:HttpService) { }
+    public httpService:HttpService,
+    public rout:ActivatedRoute,
+    public router:Router
+    ) { }
 
   ngOnInit(): void {
   }
@@ -26,8 +30,14 @@ export class BlockOneComponent implements OnInit {
   // }
   sendInfo(){
     this.httpService.sendBlockOne(this.test)
-    .subscribe((data:any)=>{console.log(123)
-    console.log(data)},error=>{console.log(error)})
+    .subscribe((data:any)=>{
+      console.log(123)
+      console.log(data)
+      this.router.navigateByUrl('/result')
+    },error=>{
+      console.log(error)
+      this.router.navigateByUrl('/result')
+    })
   }
 
 }
