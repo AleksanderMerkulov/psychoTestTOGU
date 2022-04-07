@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BlockOneComponent } from '../block-one/block-one.component';
 import { DataService } from '../services/data/data.service';
 
 @Component({
