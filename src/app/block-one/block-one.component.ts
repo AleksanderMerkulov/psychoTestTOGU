@@ -14,13 +14,16 @@ export class BlockOneComponent implements OnInit {
 
   test: BlockoneService = new BlockoneService(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
   // test!: BlockoneService 
+  dataResult:any
 
   constructor(public http:HttpClient,
     public httpService:HttpService,
     public rout:ActivatedRoute,
     public router:Router,
-    public dataServ:DataService
-    ) { }
+    public dataServ:DataService,
+    ) {
+      this.dataServ.data;
+    }
 
   ngOnInit(): void {
   }
@@ -30,17 +33,19 @@ export class BlockOneComponent implements OnInit {
   //   x.item(1).style.display = 'none'
   //   console.log(x)ааа
   // }
-  public dataResult:any;
+  
   sendInfo(){
     this.httpService.sendBlockOne(this.test)
     .subscribe((data:any)=>{
-      console.log(123)
-      console.log(data)
+      // console.log(data)
       this.dataServ.data = data
       this.router.navigateByUrl('/result')
     },error=>{
-      console.log(error)
-      this.router.navigateByUrl('/result')
+      // console.log(error)
+      // console.log("Ошибка отправки тестовой формы")
+      // this.dataServ.data = ""
+      // this.router.navigateByUrl('/result')
+      alert('Возникла ошибка. Попробуйте ввести данные ещё раз')
     })
   }
 
