@@ -6,18 +6,23 @@ import { DataService } from '../services/data/data.service';
   selector: 'app-result',
   templateUrl: './result.component.html',
   styleUrls: ['./result.component.css'],
-  providers:[DataService]
+  providers:[BlockOneComponent]
 })
 export class ResultComponent implements OnInit {
-
-  constructor(public dataService:DataService) { 
+  data:any
+  temp:any
+  constructor(public dataService:DataService,
+    public blockone:BlockOneComponent){
     this.data = this.dataService.data
   }
 
   ngOnInit(): void {
+    // this.data = this.dataService.data
+    // console.log('newdata')
+    // console.log(this.data)
   }
 
-  data:any
+  
   
 
 }

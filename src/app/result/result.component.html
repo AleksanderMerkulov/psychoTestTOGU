@@ -3,26 +3,27 @@
         <h1>Результаты по тестам!</h1>
         <div class="flex">
             <div *ngFor="let profession of data"  class="resultCard">
-                <h2>Название профессии: {{data.name}}</h2>
+                <h2>Название профессии: {{profession.name}}</h2>
                 <div class="resultCardPage">
                     <h3>Уровень обучения: </h3>
-                    <p>{{data.education_level}}</p>
+                    <p>{{profession.education_level}}</p>
                 </div>
                 <div class="resultCardPage">
                     <h3>Описание: </h3>
-                    <p>{{data.description}}</p>
+                    <p>{{profession.description}}</p>
                 </div>
                 <div class="resultCardPage">
                     <h3>Экзамены: </h3>
-                    <p>{{data.exams}}</p>
+                    <p>{{profession.exams}}</p>
                 </div>
                 <div class="resultCardPage">
                     <h3>Кем работать: </h3>
-                    <p>{{data.desription_additional}}</p>
+                    <p>{{profession.desription_additional}}</p>
                 </div>
             </div>
         </div>
-        <div class="flex">
+        
+        <!-- <div class="flex">
             <div class="resultCard">
                 <h2>Название профессии: Codder</h2>
                 <div class="resultCardPage">
@@ -31,17 +32,17 @@
                 </div>
                 <div class="resultCardPage">
                     <h3>Описание: </h3>
-                    <!-- <p>description</p> -->
+                    <p>description</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptates, deleniti ipsum placeat dicta modi officiis consequuntur, magnam vero reprehenderit natus hic est consequatur earum amet! Laborum autem ullam aperiam maiores, dignissimos ea aliquam commodi, repudiandae, enim cumque ratione cum?</p>
                 </div>
                 <div class="resultCardPage">
                     <h3>Экзамены: </h3>
-                    <!-- <p>exams</p> -->
+                    <p>exams</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptates, deleniti ipsum placeat dicta modi officiis consequuntur, magnam vero reprehenderit natus hic est consequatur earum amet! Laborum autem ullam aperiam maiores, dignissimos ea aliquam commodi, repudiandae, enim cumque ratione cum?</p>
                 </div>
                 <div class="resultCardPage">
                     <h3>Кем работать: </h3>
-                    <!-- <p>desription_additional</p> -->
+                    <p>desription_additional</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptates, deleniti ipsum placeat dicta modi officiis consequuntur, magnam vero reprehenderit natus hic est consequatur earum amet! Laborum autem ullam aperiam maiores, dignissimos ea aliquam commodi, repudiandae, enim cumque ratione cum?</p>
                 </div>
             </div>
@@ -53,64 +54,20 @@
                 </div>
                 <div class="resultCardPage">
                     <h3>Описание: </h3>
-                    <!-- <p>description</p> -->
+                    <p>description</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptates, deleniti ipsum placeat dicta modi officiis consequuntur, magnam vero reprehenderit natus hic est consequatur earum amet! Laborum autem ullam aperiam maiores, dignissimos ea aliquam commodi, repudiandae, enim cumque ratione cum?</p>
                 </div>
                 <div class="resultCardPage">
                     <h3>Экзамены: </h3>
-                    <!-- <p>exams</p> -->
+                    <p>exams</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptates, deleniti ipsum placeat dicta modi officiis consequuntur, magnam vero reprehenderit natus hic est consequatur earum amet! Laborum autem ullam aperiam maiores, dignissimos ea aliquam commodi, repudiandae, enim cumque ratione cum?</p>
                 </div>
                 <div class="resultCardPage">
                     <h3>Кем работать: </h3>
-                    <!-- <p>desription_additional</p> -->
+                    <p>desription_additional</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptates, deleniti ipsum placeat dicta modi officiis consequuntur, magnam vero reprehenderit natus hic est consequatur earum amet! Laborum autem ullam aperiam maiores, dignissimos ea aliquam commodi, repudiandae, enim cumque ratione cum?</p>
                 </div>
             </div>
-            <div class="resultCard">
-                <h2>Название профессии: Codder</h2>
-                <div class="resultCardPage">
-                    <h3>Уровень обучения: </h3>
-                    <p>Bacalavr</p>
-                </div>
-                <div class="resultCardPage">
-                    <h3>Описание: </h3>
-                    <!-- <p>description</p> -->
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptates, deleniti ipsum placeat dicta modi officiis consequuntur, magnam vero reprehenderit natus hic est consequatur earum amet! Laborum autem ullam aperiam maiores, dignissimos ea aliquam commodi, repudiandae, enim cumque ratione cum?</p>
-                </div>
-                <div class="resultCardPage">
-                    <h3>Экзамены: </h3>
-                    <!-- <p>exams</p> -->
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptates, deleniti ipsum placeat dicta modi officiis consequuntur, magnam vero reprehenderit natus hic est consequatur earum amet! Laborum autem ullam aperiam maiores, dignissimos ea aliquam commodi, repudiandae, enim cumque ratione cum?</p>
-                </div>
-                <div class="resultCardPage">
-                    <h3>Кем работать: </h3>
-                    <!-- <p>desription_additional</p> -->
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptates, deleniti ipsum placeat dicta modi officiis consequuntur, magnam vero reprehenderit natus hic est consequatur earum amet! Laborum autem ullam aperiam maiores, dignissimos ea aliquam commodi, repudiandae, enim cumque ratione cum?</p>
-                </div>
-            </div>
-            <div class="resultCard">
-                <h2>Название профессии: Codder</h2>
-                <div class="resultCardPage">
-                    <h3>Уровень обучения: </h3>
-                    <p>Bacalavr</p>
-                </div>
-                <div class="resultCardPage">
-                    <h3>Описание: </h3>
-                    <!-- <p>description</p> -->
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptates, deleniti ipsum placeat dicta modi officiis consequuntur, magnam vero reprehenderit natus hic est consequatur earum amet! Laborum autem ullam aperiam maiores, dignissimos ea aliquam commodi, repudiandae, enim cumque ratione cum?</p>
-                </div>
-                <div class="resultCardPage">
-                    <h3>Экзамены: </h3>
-                    <!-- <p>exams</p> -->
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptates, deleniti ipsum placeat dicta modi officiis consequuntur, magnam vero reprehenderit natus hic est consequatur earum amet! Laborum autem ullam aperiam maiores, dignissimos ea aliquam commodi, repudiandae, enim cumque ratione cum?</p>
-                </div>
-                <div class="resultCardPage">
-                    <h3>Кем работать: </h3>
-                    <!-- <p>desription_additional</p> -->
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptates, deleniti ipsum placeat dicta modi officiis consequuntur, magnam vero reprehenderit natus hic est consequatur earum amet! Laborum autem ullam aperiam maiores, dignissimos ea aliquam commodi, repudiandae, enim cumque ratione cum?</p>
-                </div>
-            </div>
-        </div>
+        </div> -->
     </div>
 </section>
