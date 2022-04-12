@@ -15,6 +15,7 @@ export class BlockOneComponent implements OnInit {
   test: BlockoneService = new BlockoneService(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
   // test!: BlockoneService 
   dataResult:any
+  manual = 'Lorem ipsum ...'
 
   constructor(public http:HttpClient,
     public httpService:HttpService,
@@ -23,22 +24,34 @@ export class BlockOneComponent implements OnInit {
     public dataServ:DataService,
     ) {
       this.dataServ.data;
+      this.dataServ.test
     }
 
   ngOnInit(): void {
+    if(this.test === new BlockoneService(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)){
+      this.test = this.dataServ.test
+    }
   }
   //работа со структурой DOM в ts
   // check(){
   //   let x = document.querySelectorAll('input')
   //   x.item(1).style.display = 'none'
-  //   console.log(x)ааа
+  //   console.log(x)
   // }
+  saveTestFunc(){
+    console.log('11')
+  }
+
+  openFullManual(){
+    this.manual = 'тут типа инструкция'
+  }
   
   sendInfo(){
     this.httpService.sendBlockOne(this.test)
     .subscribe((data:any)=>{
       // console.log(data)
       this.dataServ.data = data
+      this.dataServ.test = this.test
       this.router.navigateByUrl('/result')
     },error=>{
       // console.log(error)
