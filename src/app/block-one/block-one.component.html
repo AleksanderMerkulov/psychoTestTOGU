@@ -1,9 +1,14 @@
 <div class="container">
+    <div class="manualInner">
+        <h2 (click)="openFullManual()">Инструкция</h2>
+        <p id="manual">{{manual}}</p>
+    </div>
     <form (ngSubmit)="sendInfo()" name="centralFormBlockOne">
         <h2>Ответы на первый тест</h2>
         <div class="linkInner">
-            <a href="/">Первый тест - <span class="link_span">ссылка</span></a>
+            <a href="https://psytests.org/profession/ddo-run.html" target="_blank">Первый тест - <span class="link_span">ссылка</span></a>
         </div>
+        
         <div name="blokcOneFormOne" class="blockOne">
             <div class="blockInputInner">
                 <span>Природа</span>
@@ -11,7 +16,7 @@
             </div>
             <div class="blockInputInner">
                 <span>Технологии</span>
-                <input [(ngModel)]="test.OneTechnology" name="b1f1i2">
+                    <input [(ngModel)]="test.OneTechnology" name="b1f1i2">
             </div>
             <div class="blockInputInner">
                 <span>Человек</span>
@@ -24,12 +29,14 @@
             <div class="blockInputInner">
                 <span>Артист</span>
                 <input [(ngModel)]="test.OneArtistic" name="b1f1i5">
-            </div>
+             </div>
         </div>
+        
+        
         <!--  -->
         <h2>Ответы на второй тест</h2>
         <div class="linkInner">
-            <a href="/">Второй тест - <span class="link_span">ссылка</span></a>
+            <a href="https://psytests.org/profession/mapG-run.html" target="_blank">Второй тест - <span class="link_span">ссылка</span></a>
         </div>
         <div name="blockOneFormTwo">
             <div class="grid4">
@@ -172,7 +179,7 @@
         <!--  -->
         <h2>Ответы на третий тест</h2>
         <div class="linkInner">
-            <a href="/">Третий тест - <span class="link_span">ссылка</span></a>
+            <a href="https://psytests.org/profession/hollandA-run.html" target="_blank">Третий тест - <span class="link_span">ссылка</span></a>
         </div>
         <div>
             <div class="grid3">
