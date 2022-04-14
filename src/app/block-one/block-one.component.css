@@ -35,6 +35,14 @@
         
     }
 }
+/* manual */
+#manual{
+    /* display: none; */
+}
+li{
+    font-size: 125%;
+}
+
 /* GRID 4 */
 
 .grid4{
@@ -181,7 +189,7 @@ a{
     line-height: 58px;
     color: #fff;
 
-    background: #2B9EDD;
+    background: #167db4;
     border-radius: 15px;
     
     margin-left: 10%;

@@ -43,7 +43,10 @@ export class BlockOneComponent implements OnInit {
   }
 
   openFullManual(){
-    this.manual = 'тут типа инструкция'
+    // this.manual = 'тут типа инструкция'
+    var x = document.querySelectorAll('div').item(5)
+    x.style.display = 'block'
+    console.log(x)
   }
   
   sendInfo(){
