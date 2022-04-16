@@ -1,9 +1,23 @@
 <div class="container">
-    <form (ngSubmit)="sendInfo()" name="centralFormBlockOne">
-        <h2>Ответы на первый тест</h2>
-        <div class="linkInner">
-            <a href="/">Первый тест - <span class="link_span">ссылка</span></a>
+    <div class="manualInner">
+        <h2 (click)="openFullManual()">Инструкция</h2>
+        <!-- <p id="manual">{{manual}}</p> -->
+        <div id="manual">
+            <ol>
+                <li>Поочерёдно перейдите по ссылкам на тесты.</li>
+                <li>Выполните тест и получите результаты.</li>
+                <li>Вернитесь на исходную страницу и внесите полученные результаты.</li>
+                <li>Нажмите на кнопку &laquo;Получить результат по тестам&raquo;.</li>
+            </ol>
         </div>
+        <hr>
+    </div>
+    <form (ngSubmit)="sendInfo()" name="centralFormBlockOne">
+        <br>
+        <div class="linkInner">
+            <a href="https://psytests.org/profession/ddo-run.html" target="_blank">Первый тест - <span class="link_span">ДДО Климова</span></a>
+        </div>
+        <h2>Ответы на ДДО Климова</h2>
         <div name="blokcOneFormOne" class="blockOne">
             <div class="blockInputInner">
                 <span>Природа</span>
@@ -11,7 +25,7 @@
             </div>
             <div class="blockInputInner">
                 <span>Технологии</span>
-                <input [(ngModel)]="test.OneTechnology" name="b1f1i2">
+                    <input [(ngModel)]="test.OneTechnology" name="b1f1i2">
             </div>
             <div class="blockInputInner">
                 <span>Человек</span>
@@ -24,13 +38,17 @@
             <div class="blockInputInner">
                 <span>Артист</span>
                 <input [(ngModel)]="test.OneArtistic" name="b1f1i5">
-            </div>
+             </div>
         </div>
+        <hr>
+        
         <!--  -->
-        <h2>Ответы на второй тест</h2>
+        <br>
         <div class="linkInner">
-            <a href="/">Второй тест - <span class="link_span">ссылка</span></a>
+            <a href="https://psytests.org/profession/mapG-run.html" target="_blank">Второй тест - <span class="link_span">Карта интересов Голомшток</span></a>
         </div>
+        <h2>Ответы на карту интересов Голомштока</h2>
+        
         <div name="blockOneFormTwo">
             <div class="grid4">
                 <div class="blockInputInner">
@@ -169,11 +187,14 @@
                 </div>
             </div>
         </div>
+        <hr>
         <!--  -->
-        <h2>Ответы на третий тест</h2>
+        <br>
         <div class="linkInner">
-            <a href="/">Третий тест - <span class="link_span">ссылка</span></a>
+            <a href="https://psytests.org/profession/hollandA-run.html" target="_blank">Третий тест - <span class="link_span"> тестГолланд</span></a>
         </div>
+        <h2>Ответы на тест Голланда</h2>
+        
         <div>
             <div class="grid3">
                 <div class="blockInputInner">
