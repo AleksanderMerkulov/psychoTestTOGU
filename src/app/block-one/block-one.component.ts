@@ -8,7 +8,8 @@ import { HttpService } from '../services/http/http.service';
 @Component({
   selector: 'app-block-one',
   templateUrl: './block-one.component.html',
-  styleUrls: ['./block-one.component.css']
+  styleUrls: ['./block-one.component.css'],
+  providers:[DataService]
 })
 export class BlockOneComponent implements OnInit {
 

@@ -22,6 +22,22 @@ export class ResultComponent implements OnInit {
     // console.log(this.data)
   }
 
+   emptyData(){
+    if(this.data.length === 0){
+      return true
+    } else {
+      return false
+    }
+  }
+
+  // emptyData(){
+  //   if(this.data === undefined){
+  //     return true
+  //   } else {
+  //     return false
+  //   }
+  // }
+ 
   
   
 
