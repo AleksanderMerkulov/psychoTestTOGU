@@ -6,7 +6,7 @@
     display: grid;
     grid-template-columns: 50% 50%;
 
-    margin-top: 8%;
+    margin-top: 3%;
 }
 @media(max-device-width: 1024px){
     .inner{
@@ -18,6 +18,17 @@
 img{
     border-radius: 15px;
 }
+#pnuLabel{
+    text-align: center;
+    font-size: 300%;
+    margin-bottom: 0;
+
+    transition: 0.5s;
+}
+#pnuLabel:hover{
+    transform: scale(1.05);
+}
+
 
 /* Right side*/
 .photoInnerMain{
@@ -205,7 +216,7 @@ img{
     left: 139px;
     top: 205px;
 
-    background: url(/psychotest-app/design/mainPage/vectorGirl.jpg);
+    background: url(/design/mainPage/vectorGirl.jpg);
     box-shadow: 0px 50px 4px 10px rgba(0, 0, 0, 0.25);
     border-radius: 70px;
 }

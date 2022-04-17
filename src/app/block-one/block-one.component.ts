@@ -28,10 +28,19 @@ export class BlockOneComponent implements OnInit {
     }
 
   ngOnInit(): void {
-    if(this.test === new BlockoneService(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)){
+    console.log('download changes')
+    if ( this.dataServ.test !==undefined){
       this.test = this.dataServ.test
     }
+    console.log(this.dataServ.test)
   }
+  saveTest(){
+    console.log('chages')
+    this.dataServ.test = this.test
+    console.log(this.dataServ.test)
+    // localStorage['testData'] = this.test
+  }
+
   //работа со структурой DOM в ts
   // check(){
   //   let x = document.querySelectorAll('input')
