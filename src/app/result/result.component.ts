@@ -20,15 +20,18 @@ export class ResultComponent implements OnInit {
     // this.data = this.dataService.data
     // console.log('newdata')
     // console.log(this.data)
+    
   }
 
-   emptyData(){
-    if(this.data.length === 0){
-      return true
-    } else {
-      return false
-    }
-  }
+  //  emptyData(){
+  //   if(this.data.length === 0){
+  //     return true
+  //   } else {
+  //     return false
+  //   }
+  // }
+
+  
 
   // emptyData(){
   //   if(this.data === undefined){

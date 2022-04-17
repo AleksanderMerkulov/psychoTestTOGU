@@ -35,12 +35,12 @@ export class BlockOneComponent implements OnInit {
     }
     console.log(this.dataServ.test)
   }
-  saveTest(){
-    console.log('chages')
-    this.dataServ.test = this.test
-    console.log(this.dataServ.test)
-    // localStorage['testData'] = this.test
-  }
+  // saveTest(){
+  //   console.log('chages')
+  //   this.dataServ.test = this.test
+  //   console.log(this.dataServ.test)
+  //   // localStorage['testData'] = this.test
+  // }
 
   //работа со структурой DOM в ts
   // check(){
