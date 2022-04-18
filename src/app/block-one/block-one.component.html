@@ -1,43 +1,47 @@
 <div class="container">
     <div class="manualInner">
-        <h2 (click)="openFullManual()">Инструкция</h2>
-        <!-- <p id="manual">{{manual}}</p> -->
-        <div id="manual">
-            <ol>
-                <li>Поочерёдно перейдите по ссылкам на тесты.</li>
-                <li>Выполните тест и получите результаты.</li>
-                <li>Вернитесь на исходную страницу и внесите полученные результаты.</li>
-                <li>Нажмите на кнопку &laquo;Получить результат по тестам&raquo;.</li>
-            </ol>
+        <div class="grid2 topDiv">
+            <div id="manual">
+                <h2>Инструкция</h2>
+                <ol>
+                    <li>Поочерёдно перейдите по ссылкам на тесты.</li>
+                    <li>Выполните тест и получите результаты.</li>
+                    <li>Вернитесь на исходную страницу и внесите полученные результаты.</li>
+                    <li>Нажмите на кнопку &laquo;Получить результат по тестам&raquo;.</li>
+                </ol>
+            </div>
+            <a href="https://pnu.edu.ru/"> 
+                <img class="imgTOGU" title="Тихоокеанский государственный университет" src="https://pnu.edu.ru/static/img/logo-ru.png" alt="Официальный сайт Тихоокеанского государственного университета - на главную">
+            </a>
         </div>
         <hr>
     </div>
     <form (ngSubmit)="sendInfo()" name="centralFormBlockOne">
         <br>
         <div class="linkInner">
-            <a href="https://psytests.org/profession/ddo-run.html" target="_blank">Первый тест - <span class="link_span">ДДО Климова</span></a>
+            <button class="linkButton"><a href="https://psytests.org/profession/ddo-run.html" target="_blank">Пройти первый тест - <span class="link_span">ДДО Климова</span></a></button>
         </div>
         <h2>Ответы на ДДО Климова</h2>
         <div name="blokcOneFormOne" class="blockOne">
             <div class="blockInputInner">
                 <span>Природа</span>
-                <input  [(ngModel)]="test.OneNature" name="b1f1i1" placeholder="введите число">
+                <input type="number" placeholder="введите число" [(ngModel)]="test.OneNature" name="b1f1i1">
             </div>
             <div class="blockInputInner">
                 <span>Технологии</span>
-                    <input [(ngModel)]="test.OneTechnology" name="b1f1i2">
+                    <input type="number" placeholder="введите число" [(ngModel)]="test.OneTechnology" name="b1f1i2">
             </div>
             <div class="blockInputInner">
                 <span>Человек</span>
-                <input [(ngModel)]="test.OneHuman" name="b1f1i3">
+                <input type="number" placeholder="введите число" [(ngModel)]="test.OneHuman" name="b1f1i3">
             </div>
             <div class="blockInputInner">
                 <span>Знак</span>
-                <input [(ngModel)]="test.OneSign" name="b1f1i4">
+                <input type="number" placeholder="введите число" [(ngModel)]="test.OneSign" name="b1f1i4">
             </div>
             <div class="blockInputInner">
                 <span>Артист</span>
-                <input [(ngModel)]="test.OneArtistic" name="b1f1i5">
+                <input type="number" placeholder="введите число" [(ngModel)]="test.OneArtistic" name="b1f1i5">
              </div>
         </div>
         <hr>
@@ -45,7 +49,7 @@
         <!--  -->
         <br>
         <div class="linkInner">
-            <a href="https://psytests.org/profession/mapG-run.html" target="_blank">Второй тест - <span class="link_span">Карта интересов Голомшток</span></a>
+            <button class="linkButton"><a href="https://psytests.org/profession/mapG-run.html" target="_blank">Пройти второй тест - <span class="link_span">Карта интересов Голомштока</span></a></button>
         </div>
         <h2>Ответы на карту интересов Голомштока</h2>
         
@@ -53,137 +57,137 @@
             <div class="grid4">
                 <div class="blockInputInner">
                     <span>Биология</span>
-                    <input [(ngModel)]="test.TwoBiolohy" name="b1f3i">
+                    <input type="number" placeholder="введите число" [(ngModel)]="test.TwoBiolohy" name="b1f3i">
                 </div>
                 <div class="blockInputInner">
                     <span>География</span>
-                    <input [(ngModel)]="test.TwoGeography" name="b1f2i2">
+                    <input type="number" placeholder="введите число" [(ngModel)]="test.TwoGeography" name="b1f2i2">
                 </div>
                 <div class="blockInputInner">
                     <span>Геология</span>
-                    <input [(ngModel)]="test.TwoGeology" name="b1f2i3">
+                    <input type="number" placeholder="введите число" [(ngModel)]="test.TwoGeology" name="b1f2i3">
                 </div>
                 <div class="blockInputInner">
                     <span>Медицина</span>
-                    <input [(ngModel)]="test.TwoMedicine" name="b1f2i4">
+                    <input type="number" placeholder="введите число" [(ngModel)]="test.TwoMedicine" name="b1f2i4">
                 </div>
             </div>
             <div class="grid4">
                 <div class="blockInputInner">
                     <span>Лёгкая и пищевая промышленность</span>
-                    <input [(ngModel)]="test.TwoIndustry" name="b1f2i5">
+                    <input type="number" placeholder="введите число" [(ngModel)]="test.TwoIndustry" name="b1f2i5">
                 </div>
                 <div class="blockInputInner">
                     <span>Физика</span>
-                    <input [(ngModel)]="test.TwoPhysics" name="b1f2i6">
+                    <input type="number" placeholder="введите число" [(ngModel)]="test.TwoPhysics" name="b1f2i6">
                 </div>
                 <div class="blockInputInner">
                     <span>Химия</span>
-                    <input [(ngModel)]="test.TwoChemistry" name="b1f2i7">
+                    <input type="number" placeholder="введите число" [(ngModel)]="test.TwoChemistry" name="b1f2i7">
                 </div>
                 <div class="blockInputInner">
                     <span>Техника</span>
-                    <input [(ngModel)]="test.TwoTechique" name="b1f2i8">
+                    <input type="number" placeholder="введите число" [(ngModel)]="test.TwoTechique" name="b1f2i8">
                 </div>
             </div>
             <div class="grid4">
                 <div class="blockInputInner">
                     <span>Электро и радиотехника</span>
-                    <input [(ngModel)]="test.TwoEngineering" name="b1f2i9">
+                    <input type="number" placeholder="введите число" [(ngModel)]="test.TwoEngineering" name="b1f2i9">
                 </div>
                 <div class="blockInputInner">
                     <span>Металлобработка</span>
-                    <input [(ngModel)]="test.TwoMetalworking" name="b1f3i0">
+                    <input type="number" placeholder="введите число" [(ngModel)]="test.TwoMetalworking" name="b1f3i0">
                 </div>
                 <div class="blockInputInner">
                     <span>Деревообработка</span>
-                    <input [(ngModel)]="test.TwoWoodworking" name="b1f3i1">
+                    <input type="number" placeholder="введите число" [(ngModel)]="test.TwoWoodworking" name="b1f3i1">
                 </div>
                 <div class="blockInputInner">
                     <span>Строительство</span>
-                    <input [(ngModel)]="test.TwoConstruction" name="b1f3i2">
+                    <input type="number" placeholder="введите число" [(ngModel)]="test.TwoConstruction" name="b1f3i2">
                 </div>
             </div>
             <div class="grid4">
                 <div class="blockInputInner">
                     <span>Транспорт</span>
-                    <input [(ngModel)]="test.TwoTransport" name="b1f3i3">
+                    <input type="number" placeholder="введите число" [(ngModel)]="test.TwoTransport" name="b1f3i3">
                 </div>
                 <div class="blockInputInner">
                     <span>Авиация и морское дело</span>
-                    <input [(ngModel)]="test.TwoAAM" name="b1f3i4">
+                    <input type="number" placeholder="введите число" [(ngModel)]="test.TwoAAM" name="b1f3i4">
                 </div>
                 <div class="blockInputInner">
                     <span>Военные специальности</span>
-                    <input [(ngModel)]="test.TwoMilitary" name="b1f3i5">
+                    <input type="number" placeholder="введите число" [(ngModel)]="test.TwoMilitary" name="b1f3i5">
                 </div>
                 <div class="blockInputInner">
                     <span>История</span>
-                    <input [(ngModel)]="test.TwoHistory" name="b1f3i6">
+                    <input type="number" placeholder="введите число" [(ngModel)]="test.TwoHistory" name="b1f3i6">
                 </div>
             </div>
             <div class="grid4">
                 <div class="blockInputInner">
                     <span>Литература</span>
-                    <input [(ngModel)]="test.TwoLiterature" name="b1f3i7">
+                    <input type="number" placeholder="введите число" [(ngModel)]="test.TwoLiterature" name="b1f3i7">
                 </div>
                 <div class="blockInputInner">
                     <span>Журналистика</span>
-                    <input [(ngModel)]="test.TwoJournalism" name="b1f3i8">
+                    <input type="number" placeholder="введите число" [(ngModel)]="test.TwoJournalism" name="b1f3i8">
                 </div>
                 <div class="blockInputInner">
                     <span>Общетвенная деятельность</span>
-                    <input [(ngModel)]="test.TwoSocial" name="b1f3i9">
+                    <input type="number" placeholder="введите число" [(ngModel)]="test.TwoSocial" name="b1f3i9">
                 </div>
                 <div class="blockInputInner">
                     <span>Педагогика</span>
-                    <input [(ngModel)]="test.TwoPedagogy" name="b1f2i20">
+                    <input type="number" placeholder="введите число" [(ngModel)]="test.TwoPedagogy" name="b1f2i20">
                 </div>
             </div>
             <div class="grid4">
                 <div class="blockInputInner">
                     <span>Право и юриспруденция</span>
-                    <input [(ngModel)]="test.TwoLaw" name="b1f2i21">
+                    <input type="number" placeholder="введите число" [(ngModel)]="test.TwoLaw" name="b1f2i21">
                 </div>
                 <div class="blockInputInner">
                     <span>Сфера обслуживания</span>
-                    <input [(ngModel)]="test.TwoService" name="b1f2i22">
+                    <input type="number" placeholder="введите число" [(ngModel)]="test.TwoService" name="b1f2i22">
                 </div>
                 <div class="blockInputInner">
                     <span>Математика</span>
-                    <input [(ngModel)]="test.TwoMaths" name="b1f2i23">
+                    <input type="number" placeholder="введите число" [(ngModel)]="test.TwoMaths" name="b1f2i23">
                 </div>
                 <div class="blockInputInner">
                     <span>Экономика</span>
-                    <input [(ngModel)]="test.TwoEconomy" name="b1f2i24">
+                    <input type="number" placeholder="введите число" [(ngModel)]="test.TwoEconomy" name="b1f2i24">
                 </div>
             </div>
             <div class="grid4">
                 <div class="blockInputInner">
                     <span>Иностранные языки</span>
-                    <input [(ngModel)]="test.TwoForeign" name="b1f2i25">
+                    <input type="number" placeholder="введите число" [(ngModel)]="test.TwoForeign" name="b1f2i25">
                 </div>
                 <div class="blockInputInner">
                     <span>Изобразительные языки</span>
-                    <input [(ngModel)]="test.TwoFigurative" name="b1f2i26">
+                    <input type="number" placeholder="введите число" [(ngModel)]="test.TwoFigurative" name="b1f2i26">
                 </div>
                 <div class="blockInputInner">
                     <span>Изобразительное искусство</span>
-                    <input [(ngModel)]="test.TwoArt" name="b1f2i27">
+                    <input type="number" placeholder="введите число" [(ngModel)]="test.TwoArt" name="b1f2i27">
                 </div>
                 <div class="blockInputInner">
                     <span>Сценическое искусство</span>
-                    <input [(ngModel)]="test.TwoPerforming" name="b1f2i28">
+                    <input type="number" placeholder="введите число" [(ngModel)]="test.TwoPerforming" name="b1f2i28">
                 </div>
             </div>
             <div class="grid4">
                 <div class="blockInputInner">
                     <span>Музыка</span>
-                    <input [(ngModel)]="test.TwoMusic" name="b1f2i29">
+                    <input type="number" placeholder="введите число" [(ngModel)]="test.TwoMusic" name="b1f2i29">
                 </div>
                 <div class="blockInputInner">
                     <span>Физкультура и спорт</span>
-                    <input [(ngModel)]="test.TwoSport" name="b1f2i30">
+                    <input type="number" placeholder="введите число" [(ngModel)]="test.TwoSport" name="b1f2i30">
                 </div>
             </div>
         </div>
@@ -191,7 +195,7 @@
         <!--  -->
         <br>
         <div class="linkInner">
-            <a href="https://psytests.org/profession/hollandA-run.html" target="_blank">Третий тест - <span class="link_span"> тестГолланд</span></a>
+            <button class="linkButton"><a href="https://psytests.org/profession/hollandA-run.html" target="_blank">Пройти третий тест - <span class="link_span"> тест Голланда</span></a></button>
         </div>
         <h2>Ответы на тест Голланда</h2>
         
@@ -199,49 +203,32 @@
             <div class="grid3">
                 <div class="blockInputInner">
                     <span>Реалистичный</span>
-                    <input [(ngModel)]="test.ThreeReal" name="b1f3i1">
+                    <input type="number" placeholder="введите число" [(ngModel)]="test.ThreeReal" name="b1f3i1">
                 </div>
                 <div class="blockInputInner">
                     <span>Исследовательский</span>
-                    <input [(ngModel)]="test.ThreeInvestigative" name="b1f3i2">
+                    <input type="number" placeholder="введите число" [(ngModel)]="test.ThreeInvestigative" name="b1f3i2">
                 </div>
                 <div class="blockInputInner">
                     <span>Артистичный</span>
-                    <input [(ngModel)]="test.ThreeArtistic" name="b1f3i3">
+                    <input type="number" placeholder="введите число" [(ngModel)]="test.ThreeArtistic" name="b1f3i3">
                 </div>
             </div>
             <div class="grid3">
                 <div class="blockInputInner">
                     <span>Социальный</span>
-                    <input [(ngModel)]="test.ThreeSocial" name="b1f3i4">
+                    <input type="number" placeholder="введите число" [(ngModel)]="test.ThreeSocial" name="b1f3i4">
                 </div>
                 <div class="blockInputInner">
                     <span>Предприимчивый</span>
-                    <input [(ngModel)]="test.ThreeEnterprisingn" name="b1f3i5">
+                    <input type="number" placeholder="введите число" [(ngModel)]="test.ThreeEnterprisingn" name="b1f3i5">
                 </div>
                 <div class="blockInputInner">
                     <span>Традиционный</span>
-                    <input [(ngModel)]="test.ThreeConventional" name="b1f3i6">
+                    <input type="number" placeholder="введите число" [(ngModel)]="test.ThreeConventional" name="b1f3i6">
                 </div>
             </div>
         </div>
-        <!--  -->
-        <!-- <h2>Ответы на четвёртый тест</h2>
-        <div>
-            <div class="grid2">
-                <div class="blockInputInner">
-                    <span>Сфера</span>
-                    <input [(ngModel)]="test.ThreeSocial" name="b1f4i1">
-                </div>
-                <div class="blockInputInner">
-                    <span>Деятельность</span>
-                    <input [(ngModel)]="test.ThreeEnterprisingn" name="b1f4i2">
-                </div>
-            </div>
-        </div> -->
         <button type="submit" class="submitButton">Получить результат по тестам!</button>
-        <!-- <button class="submitButton" type="reset">Сбросить</button> -->
     </form>
-    <!-- <button (click)="check()">Check</button> -->
-
 </div>
