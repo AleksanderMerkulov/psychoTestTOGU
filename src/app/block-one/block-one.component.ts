@@ -14,11 +14,7 @@ import { HttpService } from '../services/http/http.service';
 export class BlockOneComponent implements OnInit {
 
   test: BlockoneService = new BlockoneService(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
-  // test: BlockoneService = new BlockoneService(NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN)
-  // test!: BlockoneService 
-  // test:BlockoneService | undefined
   dataResult:any
-  manual = 'Lorem ipsum ...'
 
   constructor(public http:HttpClient,
     public httpService:HttpService,
@@ -31,12 +27,6 @@ export class BlockOneComponent implements OnInit {
     }
 
   ngOnInit(): void {
-    // console.log('download changes')
-    // if ( this.dataServ.test !==undefined){
-    //   this.test = this.dataServ.test
-    // }
-    // this.test = this.dataServ.test
-    // console.log(this.dataServ.test)
   }
   //работа со структурой DOM в ts
   // check(){

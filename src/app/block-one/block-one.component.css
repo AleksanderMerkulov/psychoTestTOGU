@@ -35,12 +35,30 @@
         
     }
 }
-/* manual */
+/* manual block inner*/
 #manual{
     /* display: none; */
 }
 li{
     font-size: 125%;
+}
+@media(max-device-width: 1440px){
+    .imgTOGU{
+        width: auto;
+    }
+}
+@media(max-device-width: 1024px){
+    .imgTOGU{
+        width: 100%;
+    }
+}
+@media(max-device-width: 820px){
+    .imgTOGU{
+        display: none;
+    }
+    .grid2.topDiv{
+        display: block;
+    }
 }
 
 /* GRID 4 */
@@ -154,6 +172,9 @@ li{
 .grid2 .blockInputInner{
     grid-template-columns: 20% 20%;
 }
+.topDiv{
+    align-items: center;
+}
 
 /* LINK */
 
@@ -226,6 +247,32 @@ a{
         font-size: 200%;
         line-height: normal;
     }
+}
+
+.linkButton{
+    font-size: 75%;
+
+    transition: .3s;
+
+    background-color: #FCFEFF;
+
+    border: 0.2px solid #3E3E3E;
+    border-radius: 5px;
+
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    /* padding: верх право лево низ */
+}
+
+.linkButton:hover a{
+    box-shadow: none;
+    color: #FCFEFF;
+}
+.linkButton:hover{
+    background-color: #65C9FF;
+    
 }
 
 /* INPUTS */
