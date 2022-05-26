@@ -1,6 +1,6 @@
 {
     "/api/*":{
-        "target":"http://localhost:5076",
+        "target":"https://togu-prof.4ait.ru",
         "secure":false,
         "logLevel":"debug"
     }
